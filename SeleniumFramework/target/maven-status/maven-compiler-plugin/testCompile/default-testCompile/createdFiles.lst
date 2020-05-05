@@ -1,0 +1,4 @@
+BrowserTest.class
+PhantomJS\PhantomJSTest.class
+PropertiesFile.class
+HtmlUnit\HtmlUnitDriverTest.class
