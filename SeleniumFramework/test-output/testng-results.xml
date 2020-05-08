@@ -1,25 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="1" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-03T22:41:05 PDT" name="Default suite" finished-at="2020-05-03T22:41:19 PDT" duration-ms="14280">
+  <suite started-at="2020-05-07T13:37:53 PDT" name="Default suite" finished-at="2020-05-07T13:37:53 PDT" duration-ms="47">
     <groups>
     </groups>
-    <test started-at="2020-05-03T22:41:05 PDT" name="Default test" finished-at="2020-05-03T22:41:19 PDT" duration-ms="14280">
-      <class name="demo.Test1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:demo.Test1@128d2484]" started-at="2020-05-03T22:41:05 PDT" name="setUp" finished-at="2020-05-03T22:41:08 PDT" duration-ms="3426" status="PASS">
+    <test started-at="2020-05-07T13:37:53 PDT" name="Default test" finished-at="2020-05-07T13:37:53 PDT" duration-ms="47">
+      <class name="demo.TestNGMultiBrowserDemo">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:demo.TestNGMultiBrowserDemo@3c41ed1d]" started-at="2020-05-07T13:37:53 PDT" name="setup" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1588883873829" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeTest annotated setup.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeTest annotated setup.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test1()[pri:0, instance:demo.Test1@128d2484]" started-at="2020-05-03T22:41:08 PDT" name="test1" finished-at="2020-05-03T22:41:18 PDT" duration-ms="10065" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:demo.TestNGMultiBrowserDemo@3c41ed1d]" started-at="2020-05-07T13:37:53 PDT" name="teardown" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1588883873861" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.Test1@128d2484]" started-at="2020-05-03T22:41:18 PDT" name="tearDown" finished-at="2020-05-03T22:41:19 PDT" duration-ms="756" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- demo.Test1 -->
+        </test-method> <!-- teardown -->
+      </class> <!-- demo.TestNGMultiBrowserDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
